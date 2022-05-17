@@ -1,0 +1,204 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background: linear-gradient(to left, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.1)), url('1.jpg') center top; 
+	background-size: cover;
+}
+nav{
+	background: #1a1a1a;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	padding: 10px 12px;
+}
+nav ul{
+	list-style-type: none;
+	width: 60%;
+	justify-content: space-around;
+	padding: 12px 14px;
+	display: flex;
+}
+nav ul a{
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+}
+.logo{
+	color: #eaeaea;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 25px;
+	text-transform: uppercase;
+}
+nav ul li a.active{
+	box-shadow: 0 0 12px hsl(150, 100%, 50%);
+	background: #ecca;
+}
+nav ul li a:hover:not(.active){
+	background: #ec56;
+	box-shadow: 0 0 12px hsl(150, 100%, 50%);
+}
+nav ul li a.active:hover{
+	background: linear-gradient(35deg, #1a1a1a, #f2ea, #d3ae);
+	box-shadow: 0 0 12px hsl(150, 100%, 50%);
+}
+#check {
+	display: none;
+}
+.checkbtn {
+	display: none;
+}
+.home {
+	text-align: center;
+	padding-top: 10%;
+}
+.home_name{
+	border-bottom: 2px solid #fff;
+	margin-bottom: 4rem;
+	padding-bottom: 3rem;
+	font-size: 6rem;
+	color: white;
+}
+.home_name--last{
+	color: #ff652f;
+   font-weight: 1000;
+}
+.home h2{
+	font-weight: 100;
+	color: white;
+	font-size: 28px;
+	margin: 8px;
+}
+main {
+  height: 100%;
+  width: 100%;
+}
+main .social-icon {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+}
+main .social-icon a {
+  color: white;
+  text-decoration: none;
+  padding: 0.4rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+main .social-icon a:hover {
+  color: #ff652f;
+}
+footer {
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0.4rem;
+  right: 1rem;
+  text-align: right;
+  padding: 1rem;
+  color: #fff;
+}
+
+
+@media screen and (max-width: 1200px) {
+nav {
+	display: flex;
+	background: transparent;
+}
+nav ul li{
+	display: block;
+	margin: 65px 0;
+}
+.nav-list{
+	display: block;
+}
+.logo {
+	font-size: 30px;
+	padding-left: 20px;
+}
+.checkbtn {
+	display: flex;
+	color: white;
+	cursor: pointer;
+	font-size: 20px;
+	
+}
+#check {
+	display: none;
+}
+
+ul{
+	position: absolute;
+	width: 100%;
+	background: url('1.jpg') center top;
+	top: -2%;
+	left: -100%;
+	text-align: center	;
+	transition: all .5s ease-in-out;
+	}
+	nav ul li a {
+		font-size: 25px;
+	}
+	a:hover,a.active{
+		background: none;
+		color: #0082e6;
+	}
+#check:checked ~ ul{
+		left: 0;
+}
+
+.home {
+	height: 100%;
+	padding-top: 40%;
+	text-align: center;
+}
+.home_name{
+	border-bottom: 2px solid #fff;
+	margin-bottom: 2rem;
+	padding-bottom: 2rem;
+	font-size: 2rem;
+	color: white;
+}
+.home_name--last{
+	color: #ff652f;
+   font-weight: 700;
+}
+.home h2{
+	font-weight: 100;
+	color: white;
+	font-size: 20px;
+	margin: 8px;
+}
+main {
+  height: 100%;
+  width: 100%;
+}
+main .social-icon {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+}
+main .social-icon a {
+  color: white;
+  text-decoration: none;
+  padding: 0.4rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+main .social-icon a:hover {
+  color: #ff652f;
+}
+footer {
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0.4rem;
+  right: 1rem;
+  text-align: right;
+  padding: 1rem;
+  color: #fff;
+}
+}
